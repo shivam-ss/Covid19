@@ -30,7 +30,7 @@ function Patient(props){
      console.log(story)
    
     return ( <div>
-      <h1> hiiiiiiiiiii</h1>
+      <h1> hiiiiiiiiiii</h1>        
 
    
      {/* <h1> {story.statewise.map(createTable)}  </h1> */}
