@@ -1,24 +1,13 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
+import Patients from "./Patient.jsx";
 
-function Customer(){
-    const [cust, setCust]=useState("");
+function Customer(props){
+
     
-    async function fetchData(){
-      const res= await fetch("/api/customers");
-      res
-        .json()
-        .then(res=>setCust(res))
-  
-    }
-  
-    useEffect(()=>{
-      fetchData();
-    });
-    
-    const daata=JSON.stringify(cust);
-    console.log(daata)
     return <div>
-    <h1>customer 11111 </h1>
+    <h1>patient 11111 </h1>
+    
+    <Patients />
      
     </div>
 }
